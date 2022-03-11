@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+body  {
+  background-image: url("../imgs/back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+section.main__section {
+  height: 100vh;
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  
+}
+
+section.main__section div.main__div {
+  position: absolute;
+  background-color: #E2D2F9;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 45%;
+  left: 50%;
+  width: 30%;
+  height: 700px;
+  -webkit-box-shadow: 0px 0px 50px #fff;
+          box-shadow: 0px 0px 50px #fff;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-height: 767px) {
+  section.main__section div.main__div {
+    top: 50%;
+  }
+}
+
+@media (max-width: 1600px) {
+  section.main__section div.main__div {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1400px) {
+  section.main__section div.main__div {
+    width: 45%;
+  }
+}
+
+@media (max-width: 1080px) {
+  section.main__section div.main__div {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  section.main__section div.main__div {
+    width: 75%;
+  }
+}
+
+@media (max-width: 576px) {
+  section.main__section div.main__div {
+    width: 85%;
+  }
+}
+
+@media (max-height: 767px) {
+  section.main__section div.main__div {
+    height: 550px !important;
+  }
+}
+
+section.main__section div.main__div > div {
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  height: 80px;
+  margin: 0 15px;
+  border-radius: 10px;
+}
+
+@media (max-height: 767px) {
+  section.main__section div.main__div > div {
+    height: 70px;
+  }
+}
+
+section.main__section div.main__div > div:nth-child(3) {
+  height: 280px;
+}
+
+@media (max-height: 767px) {
+  section.main__section div.main__div > div:nth-child(3) {
+    height: 200px;
+  }
+}
+
+section.main__section div.main__div div.detectnewmood__div {
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+section.main__section div.main__div div.detectnewmood__div:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+section.main__section div.main__div div.songplayer__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section.main__section div.main__div div.songplayer__div div.imageof__song {
+  width: 225px;
+                height: 130px;
+                overflow: hidden !important;
+                object-fit: contain;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  
+}
+
+section.main__section div.main__div div.songplayer__div div.imageof__song img {
+  width: 70%;
+}
+
+section.main__section div.main__div div.songplayer__div div.currentTime__div {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.main__section div.main__div div.songplayer__div div.musicplayer__tools {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.main__section div.main__div div.songplayer__div div.musicplayer__tools input.myslider {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 90%;
+  /* Full-width */
+  margin: 0 auto;
+  height: 3px;
+  /* Specified height */
+  background: #fff;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.7;
+  /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s;
+  /* 0.2 seconds transition on hover */
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  border-radius: 10px;
+}
+
+section.main__section div.main__div div.songplayer__div div.musicplayer__tools input.myslider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 15px;
+  /* Set a specific slider handle width */
+  height: 15px;
+  /* Slider handle height */
+  border-radius: 50%;
+  background: #fff;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+section.main__section div.main__div div.songplayer__div div.playback__tools {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.main__section div.main__div div.songplayer__div div.playback__tools img {
+  width: 30px;
+  -webkit-transition: .1s;
+  transition: .1s;
+  cursor: pointer;
+}
+
+section.main__section div.main__div div.songplayer__div div.playback__tools img:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+
+/* .cam{
+    display: none;
+}  */
+
+.cam{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000000;
+}
